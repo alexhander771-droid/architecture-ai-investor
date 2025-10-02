@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchitectureAI - Инвестиционная платформа</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🏗️</span>
+                <span class="logo-text">ArchitectureAI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#demo" class="nav-link">Демо</a>
+                <a href="#technology" class="nav-link">Технология</a>
+                <a href="#market" class="nav-link">Рынок</a>
+                <a href="#roadmap" class="nav-link">Дорожная карта</a>
+                <a href="#contact" class="nav-link contact-btn">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-архитектор</span><br>
+                    будущее строительства<br>
+                    уже здесь
+                </h1>
+                <p class="hero-subtitle">
+                    Первая в России платформа, которая превращает текстовые описания 
+                    в готовые 3D архитектурные проекты за 30 секунд
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToDemo()">
+                        🎯 Посмотреть демо
+                    </button>
+                    <button class="btn-secondary" onclick="showPresentationModal()">
+                        📊 Презентация
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10x</div>
+                        <div class="stat-label">быстрее проектирования</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">₽2,900</div>
+                        <div class="stat-label">в месяц вместо ₽29,000</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">45K+</div>
+                        <div class="stat-label">архитекторов в России</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="demo-window">
+                    <div class="demo-header">
+                        <div class="demo-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="demo-title">ArchitectureAI Demo</div>
+                    </div>
+                    <div class="demo-content">
+                        <div class="ai-chat">
+                            <div class="message user">
+                                <div class="avatar">👤</div>
+                                <div class="text">Создай уютный двухэтажный коттедж с камином и панорамными окнами</div>
+                            </div>
+                            <div class="message ai">
+                                <div class="avatar">🤖</div>
+                                <div class="text">
+                                    <div class="thinking">AI анализирует запрос...</div>
+                                    <div class="result">
+                                        ✅ Проект создан!<br>
+                                        🏠 2 этажа, 5 комнат<br>
+                                        📐 145 м², классическая крыша<br>
+                                        🔥 Камин в гостиной<br>
+                                        🪟 Панорамные окна
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2 class="section-title">🎯 Живая демонстрация</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <div class="demo-icon">🚀</div>
+                    <h3>Быстрая генерация</h3>
+                    <p>От описания до 3D модели за 30 секунд</p>
+                    <div class="demo-badge">Сейчас в продукте</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">🏗️</div>
+                    <h3>Профессиональные чертежи</h3>
+                    <p>Экспорт в DXF, SVG, FreeCAD</p>
+                    <div class="demo-badge">Сейчас в продукте</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">🤖</div>
+                    <h3>Умный AI</h3>
+                    <p>Понимает русские архитектурные термины</p>
+                    <div class="demo-badge">Сейчас в продукте</div>
+                </div>
+                <div class="demo-card coming-soon">
+                    <div class="demo-icon">📱</div>
+                    <h3>AR просмотр</h3>
+                    <p>Визуализация проектов через камеру телефона</p>
+                    <div class="demo-badge">Q4 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="tech-section">
+        <div class="container">
+            <h2 class="section-title">🔧 Технологическая архитектура</h2>
+            <div class="tech-architecture">
+                <div class="tech-layer">
+                    <div class="layer-icon">🎨</div>
+                    <div class="layer-content">
+                        <h3>Frontend & UI</h3>
+                        <p>React + Three.js + Tailwind</p>
+                        <ul>
+                            <li>Real-time 3D preview</li>
+                            <li>Интуитивный интерфейс</li>
+                            <li>Адаптивный дизайн</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tech-layer">
+                    <div class="layer-icon">🤖</div>
+                    <div class="layer-content">
+                        <h3>AI Engine</h3>
+                        <p>TensorFlow + PyTorch + Custom NLP</p>
+                        <ul>
+                            <li>Генерация архитектурных решений</li>
+                            <li>Понимание русского языка</li>
+                            <li>Обучение на российских стандартах</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tech-layer">
+                    <div class="layer-icon">🏗️</div>
+                    <div class="layer-content">
+                        <h3>3D Core</h3>
+                        <p>FreeCAD + WebGL + Custom Engine</p>
+                        <ul>
+                            <li>Профессиональное моделирование</li>
+                            <li>Поддержка промышленных стандартов</li>
+                            <li>Оффлайн работа</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Section -->
+    <section id="market" class="market-section">
+        <div class="container">
+            <h2 class="section-title">📈 Рыночный потенциал</h2>
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-number">45,000+</div>
+                    <div class="market-label">Архитекторов в России</div>
+                    <div class="market-desc">Целевая аудитория для B2B решений</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-number">12,000+</div>
+                    <div class="market-label">Строительных компаний</div>
+                    <div class="market-desc">Потенциальные корпоративные клиенты</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-number">2M+</div>
+                    <div class="market-label">Частных проектов в год</div>
+                    <div class="market-desc">Объем рынка индивидуального строительства</div>
+                </div>
+            </div>
+            
+            <div class="revenue-model">
+                <h3>💰 Модель монетизации</h3>
+                <div class="revenue-tiers">
+                    <div class="tier">
+                        <div class="tier-name">Freemium</div>
+                        <div class="tier-price">Бесплатно</div>
+                        <ul>
+                            <li>3 проекта в месяц</li>
+                            <li>Базовая генерация</li>
+                            <li>Сообщество</li>
+                        </ul>
+                    </div>
+                    <div class="tier popular">
+                        <div class="tier-name">Pro</div>
+                        <div class="tier-price">₽2,900/месяц</div>
+                        <ul>
+                            <li>Неограниченные проекты</li>
+                            <li>Премиум текстуры</li>
+                            <li>Приоритетная поддержка</li>
+                        </ul>
+                    </div>
+                    <div class="tier">
+                        <div class="tier-name">Business</div>
+                        <div class="tier-price">₽49,900/год</div>
+                        <ul>
+                            <li>White-label решения</li>
+                            <li>API доступ</li>
+                            <li>Интеграции</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <h2 class="section-title">🗺️ Дорожная карта</h2>
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-marker current">Q3</div>
+                    <div class="phase-content">
+                        <h4>🎯 Улучшение ядра</h4>
+                        <ul>
+                            <li>Web интерфейс с 3D просмотром</li>
+                            <li>Улучшенный AI архитектор</li>
+                            <li>Библиотека материалов</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-marker">Q4</div>
+                    <div class="phase-content">
+                        <h4>🚀 Масштабирование</h4>
+                        <ul>
+                            <li>Мобильное приложение</li>
+                            <li>Облачная синхронизация</li>
+                            <li>B2B API</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-marker">Q5</div>
+                    <div class="phase-content">
+                        <h4>🌟 Экосистема</h4>
+                        <ul>
+                            <li>Marketplace проектов</li>
+                            <li>BIM интеграция</li>
+                            <li>Международная экспансия</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="investment-section">
+        <div class="container">
+            <h2 class="section-title">💼 Инвестиционное предложение</h2>
+            <div class="investment-cards">
+                <div class="investment-card">
+                    <div class="investment-amount">$500K</div>
+                    <div class="investment-round">Seed Round</div>
+                    <ul>
+                        <li>🎯 18 месяцев runaway</li>
+                        <li>📈 Product-market fit</li>
+                        <li>🚀 Подготовка к Series A</li>
+                    </ul>
+                </div>
+                <div class="investment-card">
+                    <div class="investment-metrics">
+                        <div class="metric">
+                            <div class="metric-value">10,000+</div>
+                            <div class="metric-label">Пользователей</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">₽15M</div>
+                            <div class="metric-label">ARR Year 1</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">50+</div>
+                            <div class="metric-label">B2B клиентов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 Готовы обсудить сотрудничество?</h2>
+            <div class="contact-info">
+                <h3>Давайте создадим будущее архитектуры вместе</h3>
+                <p>Мы открыты для обсуждения инвестиционных возможностей и стратегического партнерства</p>
+                <div class="contact-actions">
+                    <button class="btn-primary" onclick="showContactModal()">
+                        📧 Связаться с нами
+                    </button>
+                    <button class="btn-secondary" onclick="showPresentationModal()">
+                        📊 Скачать презентацию
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🏗️</span>
+                    <span class="logo-text">ArchitectureAI</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#demo">Демо</a>
+                    <a href="#technology">Технология</a>
+                    <a href="#market">Рынок</a>
+                    <a href="#roadmap">Дорожная карта</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2024 ArchitectureAI. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Presentation Modal -->
+    <div id="presentationModal" class="modal">
+        <div class="modal-content dark-theme">
+            <span class="close" onclick="closePresentationModal()">&times;</span>
+            <h2>📊 Инвестиционная презентация</h2>
+            <div class="presentation-view">
+                <div class="slide active">
+                    <h3>🎯 Проблема рынка</h3>
+                    <ul>
+                        <li>Архитектурное проектирование занимает недели</li>
+                        <li>Высокая стоимость услуг архитекторов</li>
+                        <li>Сложность визуализации для клиентов</li>
+                        <li>Отсутствие доступных AI-решений для РФ</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h3>🚀 Наше решение</h3>
+                    <ul>
+                        <li>AI-генерация проектов за 30 секунд</li>
+                        <li>Снижение стоимости в 10 раз</li>
+                        <li>Простота использования</li>
+                        <li>Локальная работа без интернета</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h3>📈 Рыночный потенциал</h3>
+                    <ul>
+                        <li>45,000+ архитекторов в России</li>
+                        <li>12,000+ строительных компаний</li>
+                        <li>2M+ частных проектов ежегодно</li>
+                        <li>Объем рынка: ₽50+ млрд</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h3>💼 Бизнес-модель</h3>
+                    <ul>
+                        <li><strong>Freemium:</strong> Бесплатно (3 проекта/мес)</li>
+                        <li><strong>Pro:</strong> ₽2,900/месяц</li>
+                        <li><strong>Business:</strong> ₽49,900/год</li>
+                        <li><strong>Enterprise:</strong> White-label решения</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h3>🎯 Дорожная карта</h3>
+                    <ul>
+                        <li><strong>Q3:</strong> Улучшение ядра, Web UI</li>
+                        <li><strong>Q4:</strong> Мобильное приложение, B2B API</li>
+                        <li><strong>Q5:</strong> Marketplace, BIM интеграция</li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <h3>💰 Инвестиции</h3>
+                    <ul>
+                        <li><strong>Seed Round:</strong> $500,000</li>
+                        <li><strong>Срок:</strong> 18 месяцев</li>
+                        <li><strong>Цели:</strong> Product-market fit, масштабирование</li>
+                        <li><strong>Выход:</strong> Series A в 2025 году</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <button class="btn-secondary" onclick="prevSlide()">⬅ Назад</button>
+                <span class="slide-counter">Слайд 1 из 6</span>
+                <button class="btn-primary" onclick="nextSlide()">Далее ➡</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content dark-theme">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>📞 Свяжитесь с нами</h2>
+            <p>Мы заинтересованы в стратегических партнерах и инвесторах</p>
+            <div class="contact-form">
+                <form id="investorForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Компания">
+                    <select required>
+                        <option value="">Тип запроса</option>
+                        <option value="investment">Инвестиции</option>
+                        <option value="partnership">Партнерство</option>
+                        <option value="demo">Демонстрация</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <textarea placeholder="Расскажите о вашем интересе..." rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
